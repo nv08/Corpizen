@@ -266,6 +266,8 @@
   });
 })();
 
+const COMPANY_EMAIL = "thecorpizen@gmail.com";
+
 const contactFormSubmit = (e) => {
   e.preventDefault();
   const form = document.querySelector(".email-form");
@@ -274,7 +276,8 @@ const contactFormSubmit = (e) => {
   formData.forEach((value, key) => {
     data[key] = value;
   });
+  data.message = encodeURIComponent(`${data.message}\n\nRegards,\n${data.name}`);
   window.open(
-    `mailto:${data.email}?subject=${data.subject}&body=${data.message}`
+    `mailto:${COMPANY_EMAIL}?subject=${data.subject}&body=${data.message}`
   );
 };
