@@ -567,7 +567,7 @@ section {
 }
 
 .clients img {
-  max-width: 45%;
+  max-width: 70%;
   transition: all 0.4s ease-in-out;
   display: inline-block;
   padding: 15px 0;
@@ -576,12 +576,12 @@ section {
 
 .clients img:hover {
   filter: none;
-  transform: scale(1.1);
+  transform: scale(1.2);
 }
 
 @media (max-width: 768px) {
   .clients img {
-    max-width: 40%;
+    max-width: 60%;
   }
 }
 
